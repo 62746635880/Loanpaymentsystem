@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Successful</title>
+<link rel="stylesheet" href="style.css">
+<script>
+window.onload = function() {
+    const utr = localStorage.getItem('submittedUTR');
+    if (utr) {
+        document.getElementById('utrDisplay').textContent = utr;
+    }
+};
+</script>
+</head>
+<body>
+<div class="container" style="text-align:center;">
+    <h2 style="color:green;">✅ Payment Submitted</h2>
+    <p>Thank you! Your UTR has been successfully submitted.</p>
+    <p><strong>Submitted UTR:</strong> <span id="utrDisplay"></span></p>
+    <a href="index.html">
+        <button class="submit-btn">Back to Home</button>
+    </a>
+</div>
+</body>
+</html>
